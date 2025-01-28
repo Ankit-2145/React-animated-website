@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   return (
-    <nav className="border-b">
+    <nav className="border-b font-SpaceGrotesk">
       <div className="flex justify-between h-16 items-center px-4 mx-auto">
         <a href="/" className="mr-6 flex items-center space-x-2">
           <span className="text-2xl font-bold text-sky-500">Pinnacle</span>
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-medium transition-colors hover:text-primary"
+              className=" text-muted-foreground text-sm font-medium transition-colors hover:text-foreground"
             >
               {item.name}
             </a>
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-sm font-medium transition-colors hover:text-primary"
+                    className="text-muted-foreground text-sm font-medium transition-colors hover:text-foreground"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
