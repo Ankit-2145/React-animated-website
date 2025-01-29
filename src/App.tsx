@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-// import SplashCursor from "./components/bits/cursor";
+// import SplashCursor from "./components/reactbits/cursor";
 
 function App() {
   return (
