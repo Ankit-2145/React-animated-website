@@ -3,7 +3,7 @@
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { Button } from "./ui/button";
 import { ArrowDownCircleIcon } from "lucide-react";
-import { Velustro } from "uvcanvas";
+import { Novatrix } from "uvcanvas";
 
 /**
  * Hero Component
@@ -64,7 +64,7 @@ export default function Hero() {
         </div>
         {/* Velustro Gradient Animation */}
         <div className="mt-12 max-w-6xl mx-auto h-64 md:h-96 overflow-hidden rounded-md">
-          <Velustro />
+          <Novatrix />
         </div>
       </section>
     </>
