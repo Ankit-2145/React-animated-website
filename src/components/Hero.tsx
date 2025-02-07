@@ -14,9 +14,9 @@ import { ArrowDownCircleIcon } from "lucide-react";
  */
 export default function Hero() {
   return (
-    <section className="font-SpaceGrotesk py-12 md:py-24 px-4 md:px-10">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-around items-start lg:items-center gap-8 border-b-2">
+    <section className="font-SpaceGrotesk py-12 md:py-24 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
           {/* Left column: Main heading and subheading */}
           <div className="space-y-4 text-left">
             <h1 className="text-3xl md:text-5xl text-foreground tracking-wide leading-tight uppercase">

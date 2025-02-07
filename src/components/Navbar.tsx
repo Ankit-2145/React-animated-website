@@ -25,10 +25,10 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   return (
-    <nav className="border-b font-SpaceGrotesk">
-      <div className="flex justify-between h-16 items-center px-4 mx-auto">
+    <nav className="font-SpaceGrotesk">
+      <div className="max-w-6xl flex justify-between h-16 items-center px-5 md:px-0 mx-auto">
         <a href="/" className="mr-6 flex items-center space-x-2">
-          <span className="text-2xl font-bold text-sky-500">Pinnacle</span>
+          <span className="text-2xl font-bold text-foreground">Pinnacle</span>
         </a>
         <div className="hidden md:flex items-center space-x-4 flex-1">
           {navItems.map((item) => (
@@ -42,8 +42,10 @@ const Navbar: React.FC = () => {
           ))}
         </div>
         <div className="flex items-center">
-          <Button className="mr-2">Sign in</Button>
           <ModeToggle />
+          <Button variant="outline" size="lg" className="rounded-full ml-2">
+            Contact Us
+          </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button
@@ -54,7 +56,7 @@ const Navbar: React.FC = () => {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
+            <SheetContent side="bottom">
               <div className="flex flex-col space-y-4 mt-4">
                 {navItems.map((item) => (
                   <a
