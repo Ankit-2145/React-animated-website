@@ -33,7 +33,7 @@ export default function Hero() {
               {/* Subheading with animated text */}
               <h2 className="text-base text-muted-foreground">
                 <TextAnimate animation="slideLeft" by="word">
-                  AI \ WEB3 \ UI \ 3D \ MOTION
+                  AI / WEB / APPS / UI-UX / BRANDING
                 </TextAnimate>
               </h2>
             </div>
@@ -41,7 +41,7 @@ export default function Hero() {
             {/* Right column: Description and CTA buttons */}
             <div className="flex flex-col gap-4 max-w-sm">
               {/* Animated description text */}
-              <p className="text-base md:text-lg text-left text-muted-foreground">
+              <p className="text-base text-left text-muted-foreground">
                 <TextAnimate animation="slideLeft" by="word">
                   Crafting Awesome Stories and Killer Designs & Softwares to
                   Make Brands Stand Out
@@ -51,7 +51,7 @@ export default function Hero() {
               <div className="flex flex-wrap justify-start gap-4">
                 {/* Primary CTA button */}
                 <Button variant="default" size="lg" className="rounded-full">
-                  Get Started{" "}
+                  Get in touch{" "}
                   <ArrowDownCircleIcon className="-rotate-[120deg] ml-2" />
                 </Button>
                 {/* Secondary CTA button */}

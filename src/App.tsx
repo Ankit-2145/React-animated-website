@@ -1,12 +1,12 @@
 import { ThemeProvider } from "@/components/theme-provider";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-// import SplashCursor from "./components/reactbits/cursor";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import FollowCursor from "@/components/reactbits/followCursor";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      {/* <SplashCursor /> */}
+      <FollowCursor />
       <Navbar />
       <Hero />
     </ThemeProvider>
