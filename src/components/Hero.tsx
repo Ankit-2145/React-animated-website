@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
         </div>
         {/* Velustro Gradient Animation */}
-        <div className="mt-12 max-w-6xl mx-auto h-64 md:h-96 overflow-hidden rounded-md">
+        <div className="mt-10 max-w-6xl mx-auto h-64 md:h-96 overflow-hidden rounded-md">
           <Novatrix />
         </div>
       </section>
