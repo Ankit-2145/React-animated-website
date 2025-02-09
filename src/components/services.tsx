@@ -1,16 +1,13 @@
 import BentoGrid from "@/components/kokonutui/bento-grid";
+import HandWrittenTitle from "./kokonutui/hand-written-title";
 
 const Services = () => {
   return (
     <section className="font-SpaceGrotesk pb-24">
       <div>
-        <h1 className="text-3xl md:text-4xl text-center text-foreground tracking-wide leading-tight">
-          {/* Animated text for main heading */}
-          Innovate. Design. Develop.
-          <br /> That's What We Do Best.
-        </h1>
+        <HandWrittenTitle title="What We Do Best." />
       </div>
-      <div className="py-16">
+      <div className="pb-16">
         <BentoGrid />
       </div>
     </section>
