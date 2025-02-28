@@ -12,7 +12,7 @@ export default function Moto() {
   });
 
   // Control speed (similar to `data-speed`)
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]); // Adjust speed effect
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]); // Adjust speed effect
 
   return (
     <motion.div
