@@ -18,7 +18,7 @@ export default function Moto() {
     <motion.div
       ref={ref}
       style={{ y }} // Apply smooth motion
-      className="z-10 flex min-h-64 items-center justify-center border bg-white dark:bg-black"
+      className="z-10 flex min-h-64 items-center justify-center"
     >
       <TextReveal text="Design. Code. Launch." />
     </motion.div>

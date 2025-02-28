@@ -8,6 +8,7 @@ import { ReactLenis } from "lenis/react";
 import Hero from "@/components/Hero";
 import Moto from "@/components/Moto";
 import Navbar from "@/components/Navbar";
+import AboutUs from "@/components/AboutUs";
 import Services from "@/components/services";
 import Portfolios from "@/components/Portfolios";
 
@@ -26,17 +27,18 @@ function App() {
       <ReactLenis
         root
         options={{
-          lerp: 0.1, // Adjust this value to control the smoothness (0.1 is a good starting point)
-          duration: 1.2, // Adjust the duration of the scroll animation
-          smoothWheel: true, // Enable smooth scrolling for mouse wheel
+          lerp: 0.1,
+          duration: 1.2,
+          smoothWheel: true,
         }}
       >
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
           <FollowCursor />
           <Navbar />
           <Hero />
+          <AboutUs />
+          {/* <Services /> */}
           <Moto />
-          <Services />
           <Portfolios />
         </ThemeProvider>
       </ReactLenis>

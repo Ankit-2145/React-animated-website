@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
             <a
               key={item.name}
               href={item.href}
-              className=" text-muted-foreground text-sm font-medium transition-colors hover:text-foreground"
+              className=" text-muted-foreground text-sm font-normal transition-colors hover:text-foreground"
             >
               {item.name}
             </a>

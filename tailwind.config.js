@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        SpaceGrotesk: ["Space Grotesk", "serif;"],
-        urbanist: ["urbanist", "serif;"],
+        SpaceGrotesk: ["Space Grotesk", "serif"],
+        WorkSans: ["Work Sans", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

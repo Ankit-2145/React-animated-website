@@ -1,9 +1,10 @@
 "use client";
 
-import { TextAnimate } from "@/components/magicui/text-animate";
+import { Novatrix } from "uvcanvas";
 import { Button } from "./ui/button";
 import { ArrowDownCircleIcon } from "lucide-react";
-import { Novatrix } from "uvcanvas";
+import { Magnetic } from "@/components/ui/magnetic";
+import { TextAnimate } from "@/components/magicui/text-animate";
 
 /**
  * Hero Component
@@ -14,48 +15,73 @@ import { Novatrix } from "uvcanvas";
  * @returns {JSX.Element} The rendered Hero component
  */
 export default function Hero() {
+  const springOptions = { bounce: 0.1 };
   return (
     <>
-      <section className="font-SpaceGrotesk py-24 px-4">
+      <section className="font-WorkSans py-24 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+          <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
             {/* Left column: Main heading and subheading */}
-            <div className="space-y-4 text-left">
-              <h1 className="text-3xl md:text-5xl text-foreground tracking-wide leading-tight uppercase">
+            <div className="space-y-4 text-left font-SpaceGrotesk">
+              <h1 className="text-3xl md:text-5xl text-foreground tracking-wide uppercase">
                 {/* Animated text for main heading */}
-                <TextAnimate animation="slideRight" by="character">
-                  We&apos;re Building,
-                </TextAnimate>
-                <TextAnimate animation="slideRight" by="character">
-                  Cool Experiences
-                </TextAnimate>
+                We&apos;re Building,
+                <br /> Cool Experiences
               </h1>
               {/* Subheading with animated text */}
-              <h2 className="text-base text-muted-foreground">
-                <TextAnimate animation="slideLeft" by="word">
-                  AI / WEB / APPS / UI-UX / BRANDING
-                </TextAnimate>
-              </h2>
+              <TextAnimate
+                as="h2"
+                className="text-base text-muted-foreground"
+                animation="slideLeft"
+                by="word"
+              >
+                AI / WEB / APPS / UI-UX / BRANDING
+              </TextAnimate>
             </div>
 
             {/* Right column: Description and CTA buttons */}
             <div className="flex flex-col gap-4 max-w-sm">
               {/* Animated description text */}
-              <p className="text-base text-left text-muted-foreground">
-                <TextAnimate animation="slideLeft" by="word">
-                  Crafting Awesome Stories and Killer Designs & Softwares to
-                  Make Brands Stand Out
-                </TextAnimate>
-              </p>
+              <TextAnimate
+                as="p"
+                className="text-base text-left text-muted-foreground"
+                animation="slideLeft"
+                by="word"
+              >
+                Crafting awesome stories, killer designs, and powerful software
+                to make brands stand out.
+              </TextAnimate>
               {/* Call-to-action buttons */}
               <div className="flex flex-wrap justify-start gap-4">
-                {/* Primary CTA button */}
-                <Button variant="default" size="lg" className="rounded-full">
-                  Get in touch{" "}
-                  <ArrowDownCircleIcon className="-rotate-[120deg] ml-2" />
-                </Button>
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea="global"
+                  range={200}
+                >
+                  {/* Primary CTA button */}
+                  <Button
+                    variant="default"
+                    size="default"
+                    className="rounded-full"
+                  >
+                    <Magnetic
+                      intensity={0.1}
+                      springOptions={springOptions}
+                      actionArea="global"
+                      range={200}
+                    >
+                      <span>Get in touch </span>
+                    </Magnetic>
+                    <ArrowDownCircleIcon className="-rotate-[120deg] ml-2" />
+                  </Button>
+                </Magnetic>
                 {/* Secondary CTA button */}
-                <Button variant="outline" size="lg" className="rounded-full">
+                <Button
+                  variant="outline"
+                  size="default"
+                  className="rounded-full"
+                >
                   See Our Work
                 </Button>
               </div>
