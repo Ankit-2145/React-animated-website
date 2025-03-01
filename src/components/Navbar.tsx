@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
         </div>
         <div className="flex items-center">
           <ModeToggle />
-          <Button variant="outline" size="lg" className="rounded-full ml-2">
+          <Button variant="outline" size="default" className="ml-2">
             Contact Us
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>

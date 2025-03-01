@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import StatsCounter from "@/components/reactbits/countUp";
+
 const AboutUs = () => {
   return (
     <section className="font-WorkSans py-24 px-4">
@@ -9,6 +12,16 @@ const AboutUs = () => {
               <br />
               we deconstruct problems.
             </h2>
+            <Button className="group relative overflow-hidden mt-6">
+              <span className="relative overflow-hidden">
+                <div className="absolute origin-bottom transition duration-500 [transform:translateX(-150%)_skewX(33deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
+                  Explore Our Story
+                </div>
+                <div className="transition duration-500 [transform:translateX(0%)_skewX(0deg)] group-hover:[transform:translateX(150%)_skewX(33deg)]">
+                  Explore Our Story
+                </div>
+              </span>
+            </Button>
           </div>
           <div className="max-w-2xl">
             <p className="text-base text-left text-muted-foreground">
@@ -25,6 +38,8 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
+
+        <StatsCounter />
       </div>
     </section>
   );

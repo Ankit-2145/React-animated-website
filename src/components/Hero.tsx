@@ -60,11 +60,7 @@ export default function Hero() {
                   range={200}
                 >
                   {/* Primary CTA button */}
-                  <Button
-                    variant="default"
-                    size="default"
-                    className="rounded-full"
-                  >
+                  <Button variant="default" size="default">
                     <Magnetic
                       intensity={0.1}
                       springOptions={springOptions}
@@ -77,11 +73,7 @@ export default function Hero() {
                   </Button>
                 </Magnetic>
                 {/* Secondary CTA button */}
-                <Button
-                  variant="outline"
-                  size="default"
-                  className="rounded-full"
-                >
+                <Button variant="secondary" size="default">
                   See Our Work
                 </Button>
               </div>
