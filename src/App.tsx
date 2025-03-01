@@ -37,7 +37,7 @@ function App() {
           <Navbar />
           <Hero />
           <AboutUs />
-          {/* <Services /> */}
+          <Services />
           <Moto />
           <Portfolios />
         </ThemeProvider>
