@@ -13,12 +13,10 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
   { name: "Work", href: "/work" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "About Us", href: "/about" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const Navbar: React.FC = () => {
@@ -35,7 +33,7 @@ const Navbar: React.FC = () => {
             <a
               key={item.name}
               href={item.href}
-              className=" text-muted-foreground text-sm font-normal transition-colors hover:text-foreground"
+              className=" text-muted-foreground text-sm font-medium transition-colors hover:text-foreground"
             >
               {item.name}
             </a>
