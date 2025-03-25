@@ -8,9 +8,9 @@ const demoData: Gallery4Props = {
   items: [
     {
       id: "shadcn-ui",
-      title: "shadcn/ui: Building a Modern Component Library",
+      title: "Web Development Services",
       description:
-        "Explore how shadcn/ui revolutionized React component libraries by providing a unique approach to component distribution and customization, making it easier for developers to build beautiful, accessible applications.",
+        "Building Fast, Scalable, and Modern Websites That Drive Growth.",
       href: "https://ui.shadcn.com",
       image:
         "https://images.unsplash.com/photo-1551250928-243dc937c49d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDI3NzN8MHwxfGFsbHwxMjN8fHx8fHwyfHwxNzIzODA2OTM5fA&ixlib=rb-4.0.3&q=80&w=1080",
