@@ -10,7 +10,6 @@ import Moto from "@/components/Moto";
 import Navbar from "@/components/Navbar";
 import AboutUs from "@/components/AboutUs";
 import Services from "@/components/services";
-import Portfolios from "@/components/Portfolios";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,8 +37,7 @@ function App() {
           <Hero />
           <AboutUs />
           <Services />
-          <Moto />
-          <Portfolios />
+          {/* <Moto /> */}
         </ThemeProvider>
       </ReactLenis>
     </>
