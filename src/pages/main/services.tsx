@@ -1,6 +1,6 @@
-import { ServiceCard } from "./service-card";
+import { ServiceCard } from "@/components/services/service-card";
 
-const Services = () => {
+export const Services = () => {
   return (
     <section className="font-SpaceGrotesk py-24">
       <div>
@@ -14,5 +14,3 @@ const Services = () => {
     </section>
   );
 };
-
-export default Services;

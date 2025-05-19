@@ -4,7 +4,7 @@ import { TextReveal } from "@/components/magicui/text-reveal";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function Moto() {
+export const Moto = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -23,6 +23,6 @@ export default function Moto() {
       <TextReveal text="Design. Code. Launch." />
     </motion.div>
   );
-}
+};
 
 // Beyond design. Beyond development. Beyond limits.

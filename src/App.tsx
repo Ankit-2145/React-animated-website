@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
+
+import { ReactLenis } from "lenis/react";
 import { AnimatePresence } from "framer-motion";
+
 import Preloader from "@/components/ui/apple-preloader";
 import { ThemeProvider } from "@/components/theme-provider";
 import FollowCursor from "@/components/reactbits/followCursor";
 
-import { ReactLenis } from "lenis/react";
-import Hero from "@/components/Hero";
-import Moto from "@/components/Moto";
-import Navbar from "@/components/Navbar";
-import AboutUs from "@/components/AboutUs";
-import Services from "@/components/services";
+import { Moto } from "@/pages/main/moto";
+import { Hero } from "@/pages/main/hero";
+import { Services } from "@/pages/main/services";
+import { Analytics } from "@/pages/main/analytics";
+import { Navbar } from "@/components/layout/navbar";
 
-function App() {
+const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -35,13 +37,13 @@ function App() {
           <FollowCursor />
           <Navbar />
           <Hero />
-          <AboutUs />
+          <Analytics />
           <Services />
-          {/* <Moto /> */}
+          <Moto />
         </ThemeProvider>
       </ReactLenis>
     </>
   );
-}
+};
 
 export default App;

@@ -1,20 +1,12 @@
 "use client";
 
 import { Novatrix } from "uvcanvas";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { ArrowDownCircleIcon } from "lucide-react";
 import { Magnetic } from "@/components/ui/magnetic";
 import { TextAnimate } from "@/components/magicui/text-animate";
 
-/**
- * Hero Component
- *
- * This component renders the main hero section of the landing page.
- * It showcases the company's main message and call-to-action buttons.
- *
- * @returns {JSX.Element} The rendered Hero component
- */
-export default function Hero() {
+export const Hero = () => {
   const springOptions = { bounce: 0.1 };
   return (
     <>
@@ -87,4 +79,4 @@ export default function Hero() {
       </section>
     </>
   );
-}
+};

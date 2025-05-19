@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
   { name: "Contact Us", href: "/contact" },
 ];
 
-const Navbar: React.FC = () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   return (
@@ -74,5 +74,3 @@ const Navbar: React.FC = () => {
     </nav>
   );
 };
-
-export default Navbar;

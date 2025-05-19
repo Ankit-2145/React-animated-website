@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import StatsCounter from "@/components/reactbits/countUp";
 
-const AboutUs = () => {
+export const Analytics = () => {
   return (
     <section className="font-WorkSans py-24 px-4">
       <div className="max-w-6xl mx-auto">
@@ -44,5 +44,3 @@ const AboutUs = () => {
     </section>
   );
 };
-
-export default AboutUs;
