@@ -67,7 +67,7 @@ export const ServiceCard = () => {
             ))}
           </CardContent>
           <CardFooter>
-            <Button>START A DESIGN PROJECT</Button>
+            <Button>START A PROJECT</Button>
           </CardFooter>
         </Card>
       ))}
